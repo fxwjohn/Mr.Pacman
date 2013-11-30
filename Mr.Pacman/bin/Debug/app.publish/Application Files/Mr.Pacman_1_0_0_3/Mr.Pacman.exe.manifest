@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="Mr.Pacman.exe" version="1.0.0.3" publicKeyToken="c3dc7267502177ea" language="neutral" processorArchitecture="x86" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Mr.Pacman" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+    <commandLine file="Mr.Pacman.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC 清单选项
+          如果要更改 Windows 用户帐户控制级别，请用以下节点之一替换
+          requestedExecutionLevel 节点。
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+          如果要利用文件和注册表虚拟化提供
+          向后兼容性，请删除 requestedExecutionLevel 节点。
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Mr.Pacman.exe" size="42496">
+      <assemblyIdentity name="Mr.Pacman" version="1.0.0.0" language="neutral" processorArchitecture="x86" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>WJ8OQ2k1WHaPfVnNrXEHDaA9U0w=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+<publisherIdentity name="CN=fxw-PC\fxw" issuerKeyHash="c444c0cad556d35a109c869077b4fc07cea134ae" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>2+7Fqyw+5uCMcEw8Se74K6NYUo8=</DigestValue></Reference></SignedInfo><SignatureValue>Dmkh+ZqswTFbqXGLJ26uAMBq4Z7/XwLK0YG36ZwN+dmlySIgAZVxCfFyE3g33C4y2K33mVFCMjtw6iRx4mulv14hrK8i5bUWMItk4vnt6VmJPvdw7VlUKWhfP8g59oFQLwBV39l4lu8RhnEZATdZReTGjdZN0RrzD4Acl5KNUV8=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>svBvAdLb+hp6y3CIxBLkh14nZ50en9xi/FTPFeTIyQstYbkXAn6S1epyfV1PthgOosKKeMv13XANZSfQ7yiVxll+5WR4RSRLS53iIyPoDCwExM6DN0pN1s6F4kEDTWNdkeNJQb3ntr69KURrCrZaTxA4L0MV9SizbXHckce9xsM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="8f5258a32bf8ee493c4c708ce0e63e2cabc5eedb" Description="" Url=""><as:assemblyIdentity name="Mr.Pacman.exe" version="1.0.0.3" publicKeyToken="c3dc7267502177ea" language="neutral" processorArchitecture="x86" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=fxw-PC\fxw</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>P0lsqfhQHSU6x4OAy72hBlyTWAc=</DigestValue></Reference></SignedInfo><SignatureValue>DI9NWMJ14AeWexAX7jpbyNyLd9GaPqDVHAzaEvLu7OW3X3KMvjUulWL0QRn7KnyEJ+XxaB1asM6DzXfwauogmEawsr/iQ8q5Pz+ncPQDjJ4BN6xjE73BTpgZ5cnaYNhizZw2qUPz3jYj875ZUtYvqBYmIV43z5pMWazN3XDgB+I=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>svBvAdLb+hp6y3CIxBLkh14nZ50en9xi/FTPFeTIyQstYbkXAn6S1epyfV1PthgOosKKeMv13XANZSfQ7yiVxll+5WR4RSRLS53iIyPoDCwExM6DN0pN1s6F4kEDTWNdkeNJQb3ntr69KURrCrZaTxA4L0MV9SizbXHckce9xsM=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIBwTCCASqgAwIBAgIQcjbYujn7N4REmPwnBRGRXjANBgkqhkiG9w0BAQUFADAfMR0wGwYDVQQDHhQAZgB4AHcALQBQAEMAXABmAHgAdzAeFw0xMzEwMDYxMjE0MTdaFw0xNDEwMDYxODE0MTdaMB8xHTAbBgNVBAMeFABmAHgAdwAtAFAAQwBcAGYAeAB3MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCy8G8B0tv6GnrLcIjEEuSHXidnnR6f3GL8VM8V5MjJCy1huRcCfpLV6nJ9XU+2GA6iwop4y/XdcA1lJ9DvKJXGWX7lZHhFJEtLneIjI+gMLATEzoM3Sk3WzoXiQQNNY12R40lBvee2vr0pRGsKtlpPEDgvQxX1KLNtcdyRx73GwwIDAQABMA0GCSqGSIb3DQEBBQUAA4GBABcnaVg345GBTs1PcZ2iNGf9E3nE1mbq+fRgfv0NJbHqtJEfpo9Qcy3Tf9uTJg13Z3FB/k1UMlVGgaxknCtFn9YWC4EYEnziTSEhUjw3kUBFNm0TTdoHrFg6/y85YKL5JdSZyNSqiYVtENCC/iUCD6ZXMAIKTOodhHANzn9v6zDh</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
